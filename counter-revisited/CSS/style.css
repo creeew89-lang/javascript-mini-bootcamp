@@ -1,0 +1,61 @@
+:root{
+  --bg: #f1f5f8;
+  --card: #ffffff;
+  --text: #102a42;
+  --accent: #49a6e9;
+  --danger: #e74c3c;
+  --safe  : #2ecc71;
+  --radius: .5rem;
+  --shadow: 0 4px 12px rgba(0,0,0,.1);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  font-family: system-ui, sans-serif;
+  color: var(--text);
+}
+.container{
+  text-align: center;
+  background: var(--card);
+  padding: 3rem 4rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+h1{
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+#value{
+  font-size: 4rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 2rem;
+  transition: color .3s;
+}
+.btn-group{
+  display: flex;
+  gap: 1rem;
+}
+button{
+  border: none;
+  padding: .6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: filter .2s;
+}
+button:hover{
+  filter: brightness(1.1);
+}
+#increase{background: var(--safe); color: #fff;}
+#decrease{background: var(--danger); color: #fff;}
+#reset{background: #95a5a6; color: #fff;}
