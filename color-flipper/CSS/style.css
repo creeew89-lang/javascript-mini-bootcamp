@@ -1,0 +1,62 @@
+:root{
+  --bg: #f1f5f8;
+  --card: #ffffff;
+  --text: #102a42;
+  --accent: #49a6e9;
+  --radius: 0.5rem;
+  --shadow: 0 4px 12px rgba(0,0,0,.1);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  transition:  .3s;
+}
+.container{
+  text-align: center;
+}
+h1{
+    margin-bottom: 1.5rem;
+    font-size: 2px;
+    letter-spacing: 2px;
+}
+.card{
+  background: var(--card);
+  padding: 2rem 3rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+#hex{
+   font-size: 2.5rem;
+  font-weight: 600;
+  font-family: monospace;
+  display: block;
+  margin-bottom: 1.5rem;   
+}
+.btn-group{
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+.btn{
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: var(--radius);
+  background: var(--accent);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition:  .3s;
+}
+button:hover{
+filter: brightness(1,15);
+}
