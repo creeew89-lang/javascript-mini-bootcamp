@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ Accordion</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Frequently Asked Questions</h1>
+
+    <div class="faq" id="faq">
+      <article class="faq-card">
+        <button class="faq-toggle" aria-expanded="false">
+          <span class="faq-title">What is JavaScript?</span>
+          <span class="chevron"></span>
+        </button>
+        <div class="faq-content">
+          <p>JavaScript is a high-level, interpreted scripting language that conforms to the ECMAScript specification.</p>
+        </div>
+      </article>
+
+      <article class="faq-card">
+        <button class="faq-toggle" aria-expanded="false">
+          <span class="faq-title">What are JavaScript data types?</span>
+          <span class="chevron"></span>
+        </button>
+        <div class="faq-content">
+          <p>Primitive types: Undefined, Null, Boolean, Number, BigInt, String, Symbol. Structural: Object, Array, Function, etc.</p>
+        </div>
+      </article>
+
+      <article class="faq-card">
+        <button class="faq-toggle" aria-expanded="false">
+          <span class="faq-title">Is JavaScript pass-by-value or pass-by-reference?</span>
+          <span class="chevron"></span>
+        </button>
+        <div class="faq-content">
+          <p>Primitives are passed by value; objects are passed by reference (the reference itself is passed by value).</p>
+        </div>
+      </article>
+
+      <article class="faq-card">
+        <button class="faq-toggle" aria-expanded="false">
+          <span class="faq-title">What is the difference between let, var and const?</span>
+          <span class="chevron"></span>
+        </button>
+        <div class="faq-content">
+          <p><code>var</code> is function-scoped and hoisted; <code>let</code> and <code>const</code> are block-scoped and not hoisted; <code>const</code> bindings are read-only.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+  <script src="JS/apps.js"></script>
+</body>
+</html>
