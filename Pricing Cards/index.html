@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Cards</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Pricing Plans</h1>
+
+    <div class="toggle-wrapper">
+      <span>Monthly</span>
+      <label class="switch">
+        <input type="checkbox" id="price-toggle">
+        <span class="slider"></span>
+      </label>
+      <span>Yearly</span>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Basic</h3>
+        <p class="price"><span class="dollar">$</span><span class="amount" data-mo="9" data-yr="90">9</span>/mo</p>
+        <ul>
+          <li>1 Project</li>
+          <li>1 GB Storage</li>
+          <li>Email Support</li>
+        </ul>
+        <button>Get Started</button>
+      </div>
+
+      <div class="card featured">
+        <h3>Pro</h3>
+        <p class="price"><span class="dollar">$</span><span class="amount" data-mo="19" data-yr="190">19</span>/mo</p>
+        <ul>
+          <li>10 Projects</li>
+          <li>50 GB Storage</li>
+          <li>Priority Support</li>
+        </ul>
+        <button>Get Started</button>
+      </div>
+
+      <div class="card">
+        <h3>Enterprise</h3>
+        <p class="price"><span class="dollar">$</span><span class="amount" data-mo="39" data-yr="390">39</span>/mo</p>
+        <ul>
+          <li>Unlimited Projects</li>
+          <li>500 GB Storage</li>
+          <li>24/7 Phone + Email</li>
+        </ul>
+        <button>Get Started</button>
+      </div>
+    </div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+</html>
